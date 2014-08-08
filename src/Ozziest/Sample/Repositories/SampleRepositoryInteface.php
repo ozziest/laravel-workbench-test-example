@@ -2,11 +2,11 @@
 
 interface SampleRepositoryInteface {
 
-	/**
-	 * Insert 
-	 *
-	 * @return null
-	 */
-	public function insert();
-	
+    /**
+     * Insert 
+     *
+     * @return null
+     */
+    public function insert();
+    
 }

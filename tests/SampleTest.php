@@ -9,11 +9,11 @@ class TestCase extends Orchestra\Testbench\TestCase {
      *
      * @return array
      */
-	protected function getPackageProviders()
+    protected function getPackageProviders()
     {
         return array(
-				'Ozziest\Sample\SampleServiceProvider'
-        	);
+                'Ozziest\Sample\SampleServiceProvider'
+            );
     }
 
     /**
@@ -21,7 +21,7 @@ class TestCase extends Orchestra\Testbench\TestCase {
      *
      * @return array
      */
-	protected function getPackageAliases()
+    protected function getPackageAliases()
     {
         return array(
             'Sample' => 'Ozziest\Sample\Facades\Sample'
@@ -34,14 +34,14 @@ class TestCase extends Orchestra\Testbench\TestCase {
      * @test
      * @return null
      */
-	public function sample()
-	{
+    public function sample()
+    {
         $mock = new Eloquent();
         $mock = $mock->save(1, 123)
                      ->get();
         Sample::mock($mock);
         
-		$this->assertTrue(Sample::getTrue());
-	}
+        $this->assertTrue(Sample::getTrue());
+    }
 
 }

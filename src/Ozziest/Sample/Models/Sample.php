@@ -2,6 +2,6 @@
 
 class Sample extends \Eloquent {
 
-    protected $table = 'uyeler';
+    protected $table = 'sample_table';
 
 }
