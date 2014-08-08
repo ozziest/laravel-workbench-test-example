@@ -1,0 +1,25 @@
+{
+    "name": "ozziest/layers",
+    "description": "",
+    "authors": [
+        {
+            "name": "Özgür Adem Işıklı",
+            "email": "i.ozguradem@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "orchestra/testbench": "2.2.*",
+        "mockery/mockery": "dev-master",
+        "ozziest/mocker": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-0": {
+            "Ozziest\\Sample\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
